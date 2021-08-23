@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first {
+            background-color: red;
+
+            width: 200px;
+            height: 100px;
+            margin-bottom: 50px;
+        }
+
+        .first:hover {
+            animation: superAnimation 2s 1 linear alternate both;
+        }
+
+        .second {
+            background-color: blue;
+            animation: superAnimation 2s infinite linear alternate;
+            width: 200px;
+            height: 100px;
+
+        }
+
+        @keyframes superAnimation {
+            0% {
+                width: 200px;
+            }
+
+            100% {
+                width: 400px;
+            }
+        }
+
+
+
+        /* @keyframes superAnimation {
+            0% {
+                width: 200px;
+            }
+
+            50% {
+                width: 400px;
+            }
+
+            100% {
+                width: 200px;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="first">Pierwszy</div>
+    <div class="second"> Drugi</div>
+</body>
+
+</html>

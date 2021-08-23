@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .con {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            overflow: hidden;
+        }
+
+        div.pow {
+
+            width: 200px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transition: 1s;
+
+            /* Standard syntax */
+        }
+
+        div.pow:hover {
+            transform: scale(3, 3) translate(10px, 30px);
+            /* Standard syntax */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The scale() Method</h1>
+    <p>The scale() method increases or decreases the size of an element.</p>
+
+    <div class="con">
+        <div class="pow">
+            This div element is two times of its original width, and three times of its original height.
+        </div>
+    </div>
+
+</body>
+
+</html>

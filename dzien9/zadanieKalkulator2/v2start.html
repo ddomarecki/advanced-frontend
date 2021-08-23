@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <style>
+        /* wykorzystaj body do wycentrowania kalkulatora za pomocą flexboxa */
+
+        /* nie można zmieniać struktury html */
+
+        /* kalkulator ma 60% szerokości body ale nie mniej niz 500px */
+
+        /* wyświetlacz wyniku ma 15vh wysokości */
+
+        /* przyciski mają 10vh wysokości */
+
+        /* Panel bez wyświetlacza ma mieć wysokość 70vh (czyli z wyświetlaczem 85vh)*/
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            /* flex-direction: column; */
+            align-items: center;
+            justify-content: center;
+
+            height: 100vh;
+            font-family: arial;
+
+        }
+
+        .panel {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 85vh;
+            min-width: 500px;
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+
+        }
+
+        .result {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-family: arial;
+            font-size: 75px;
+            padding-right: 10px;
+            height: 15vh;
+            background-color: black;
+            color: white;
+            width: 100%;
+
+
+        }
+
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 10vh;
+            width: 28%;
+            font-size: 40px;
+            color: white;
+            background-color: cadetblue;
+
+        }
+
+        div:nth-child(18) {
+            width: 45%;
+        }
+
+        div:nth-child(17) {
+            width: 45%;
+        }
+
+        div.panel>div.result~div:hover {
+            background-color: rgb(71, 71, 226);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="result">2 343.99</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>+</div>
+        <div>0</div>
+        <div>-</div>
+        <div>/</div>
+        <div>.</div>
+        <div>*</div>
+        <div>C</div>
+        <div>=</div>
+    </div>
+</body>
+
+</html>

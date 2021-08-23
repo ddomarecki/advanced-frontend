@@ -1,0 +1,7 @@
+Visual Studio Code:
+
+dodatki:
+
+Live Server
+Material Icon Theme
+Prettier - Code formatter /Beautify
